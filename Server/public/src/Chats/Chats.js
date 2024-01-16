@@ -3,7 +3,6 @@ import Right from './Right/Right';
 import Left from './Left/Left';
 import { Link, useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import chats_back from '../public/chats_back.jpg'
 
 
 
@@ -66,7 +65,7 @@ function Chats() {
                         Logout <i className="bi bi-box-arrow-right" />
                 </button>
             </Link>
-                <div id="container3" onClick={handleActiveContactChange} style={{ backgroundImage: `url(${chats_back})` }}>
+                <div id="container3" onClick={handleActiveContactChange} style={{ backgroundImage: `url(chats_back.jpg)` }}>
                     <Left username={username} contactList={contactList} setContactList={setContactList} token={token} chatID={chatID} setChatID={setChatID}/>
                     <div className="right" id="right">
                     <Right p={p} image={image} contactList={contactList} setContactList={setContactList} token={token} chatID={chatID}  username={username}/>
